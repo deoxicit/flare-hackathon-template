@@ -1,17 +1,18 @@
-# Ethereum Hackathon Template
+# Flare Hackathon Template
 
-A comprehensive template for Ethereum-based hackathons, featuring a modular monorepo structure with frontend, backend, and smart contracts. Built with modern tools and best practices for rapid Web3 development.
+A comprehensive template for Flare Network-based hackathons, featuring a modular monorepo structure with frontend, backend, and smart contracts. Built with modern tools and best practices for rapid Web3 development on the Flare ecosystem.
 
 ## Features
 
 - 🚀 **Modern Stack**: Next.js 14, TypeScript, Tailwind CSS
-- 🔗 **Web3 Integration**: Wagmi v2, Viem, RainbowKit
+- 🔗 **Flare Integration**: Wagmi v2, Viem, RainbowKit with Flare Network support
 - 📦 **Monorepo**: Turborepo for efficient development
 - 🏗️ **Modular Architecture**: Separate packages for frontend, backend, and contracts
 - 🔒 **Type Safety**: Full TypeScript support across all packages
 - 🎨 **Beautiful UI**: Modern dark theme with responsive design
-- 🔄 **Smart Contract Integration**: Seamless contract interaction with type safety
+- 🔄 **Flare Smart Contract Integration**: Seamless contract interaction with type safety
 - 📱 **Mobile First**: Fully responsive design for all devices
+- 🔥 **Flare Ecosystem**: Ready-to-use components for Flare's unique features
 
 ## Project Structure
 
