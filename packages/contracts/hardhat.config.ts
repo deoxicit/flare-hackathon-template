@@ -8,6 +8,11 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
+// Load private key from environment variable or use a default (for development only)
+const PRIVATE_KEY =
+  process.env.PRIVATE_KEY ||
+  "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"; // Default dev key, do not use in production
+
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.20",
@@ -22,6 +27,18 @@ const config: HardhatUserConfig = {
     hardhat: {},
     localhost: {
       url: "http://127.0.0.1:8545",
+    },
+    // Flare Mainnet
+    flare: {
+      url: "https://flare-api.flare.network/ext/C/rpc",
+      chainId: 14,
+      accounts: [PRIVATE_KEY],
+    },
+    // Flare Testnet (Coston2)
+    coston2: {
+      url: "https://coston2-api.flare.network/ext/C/rpc",
+      chainId: 114,
+      accounts: [PRIVATE_KEY],
     },
   },
   typechain: {
