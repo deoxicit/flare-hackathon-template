@@ -1,0 +1,35 @@
+{
+  "name": "@hackathon/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run scripts/deploy.ts --network localhost",
+    "clean": "npx hardhat clean",
+    "lint": "eslint src --ext .ts",
+    "sync-abi": "npx hardhat run scripts/sync-abi.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "pino-pretty": "^13.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.56.0",
+    "ethers": "^6.11.1",
+    "glob": "^10.3.10",
+    "hardhat": "^2.20.1",
+    "hardhat-deploy": "^0.11.34",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
